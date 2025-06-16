@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolaceNEMS", "Source\Publisher\SolaceNEMS.csproj", "{9001AAD5-F451-408C-8B79-642DE4018159}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolaceNEMS", "Source\SolaceNEMS\SolaceNEMS.csproj", "{9001AAD5-F451-408C-8B79-642DE4018159}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Source\Application\Application.csproj", "{197A9813-7A36-4D74-B0C9-DC7F946F506F}"
 EndProject

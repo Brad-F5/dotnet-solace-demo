@@ -11,12 +11,12 @@ public static class IServiceCollectionExtensions
     public static void AddNEMS(this IServiceCollection services, IConfigurationSection section)
     {
         services.Configure<NEMSConfig>(section);
-        services.AddSingleton<SolaceContextFactory>();
+        services.AddSingleton<ISolaceContextFactory, SolaceContextFactory>();
         services.AddSingleton<TokenManager>();
 
         services.AddSingleton(serviceProvider =>
         {
-            var factory = serviceProvider.GetRequiredService<SolaceContextFactory>();
+            var factory = serviceProvider.GetRequiredService<ISolaceContextFactory>();
             var context = factory.CreateContext();
             return context;
         });

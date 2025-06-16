@@ -14,9 +14,9 @@ public class PublisherController : ControllerBase
 {
     private readonly ILogger<PublisherController> _logger;
     private readonly ISessionManager _sessions;
-    private readonly SolaceContextFactory _contextFactory;
+    private readonly ISolaceContextFactory _contextFactory;
 
-    public PublisherController(ILogger<PublisherController> logger, ISessionManager sessions, SolaceContextFactory contextFactory)
+    public PublisherController(ILogger<PublisherController> logger, ISessionManager sessions, ISolaceContextFactory contextFactory)
     {
         _logger = logger;
         _sessions = sessions;

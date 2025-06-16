@@ -11,7 +11,7 @@ public class SubscriberService
 {
     private readonly ILogger<SubscriberService> _logger;
     private readonly ISessionManager _sessions;
-    private readonly SolaceContextFactory _contextFactory;
+    private readonly ISolaceContextFactory _contextFactory;
     private readonly EventLoader _eventLoader;
     private readonly AppConfig _config;
 
@@ -19,7 +19,7 @@ public class SubscriberService
     private IQueue _queue;
     private IFlow _flow;
 
-    public SubscriberService(ILogger<SubscriberService> logger, ISessionManager sessions, SolaceContextFactory contextFactory, EventLoader eventLoader, IOptions<AppConfig> config)
+    public SubscriberService(ILogger<SubscriberService> logger, ISessionManager sessions, ISolaceContextFactory contextFactory, EventLoader eventLoader, IOptions<AppConfig> config)
     {
         _logger = logger;
         _sessions = sessions;
