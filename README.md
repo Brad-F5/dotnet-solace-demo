@@ -19,7 +19,7 @@ The subscriber portion of the program has been desigend to acknowledge all messa
 #### Installation:
 
 1. Clone this repo into a folder of your choice.
-2. Open the `source/properties.json` file. Replace the `PLACEHOLDER` variables to meet your connection details.
+2. Open the `./Source/Application/appsettings.json` file. Replace the `PLACEHOLDER` variables to meet your connection details.
 3. Run `docker-compose up --build` in the root folder.
 
 The application should install itself and start up. Once started it will connect to the Solace instance and start listening on the specified queue. Once a message is sent to the queue the consumer will pick it up and should display the message contents to the terminal.
@@ -32,7 +32,7 @@ The application should install itself and start up. Once started it will connect
 #### Installation:
 
 1.  Clone this repo into a folder of your choice.
-2.  Open the `Source/Publisher/Application/appsettings.json` file. Replace the `PLACEHOLDER` variables to meet your connection details.
-3.  To run the application, make sure you are in the `Source/Publisher` directory and run the command
+2.  Open the `./Source/Application/appsettings.json` file. Replace the `PLACEHOLDER` variables to meet your connection details.
+3.  To run the application, make sure you are in the `./Source/Application` directory and run the command
 
     `dotnet run`
